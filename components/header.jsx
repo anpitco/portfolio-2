@@ -7,14 +7,14 @@ const navItems = [
     { linkText: 'About Me', href: '/aboutMe' },
     { linkText: 'Experience', href: '/experience' },
     { linkText: 'Projects', href: '/projects' },
-    { linkTest: 'Feedback', href: '/feedback' }
+    { linkText: 'Feedback', href: '/feedback' }
 ];
 
 export function Header() {
     return (
         <nav className="flex flex-wrap items-center gap-4 pt-6 pb-12 sm:pt-12 md:pb-24">
             <Link href="/" className="pt-16 pb-12 sm:pt-24 sm:pb-16">
-                <Image src={personalLogo} width={100} height={100} alt="Personal logo" />
+                <Image src={personalLogo} width={80} height={80} alt="Personal logo" />
             </Link>
             {!!navItems?.length && (
                 <ul className="flex flex-wrap gap-x-4 gap-y-1">

@@ -32,7 +32,7 @@ export function FeedbackForm() {
     // };
     return (
         <div className="w-full md:max-w-md">
-            <Card title="Leave Feedback For Me">
+            <Card title="Feedback For Anna">
                 <form name="feedback" action="https://formsubmit.co/anna.pitcock@gmail.com" method="POST" className="flex flex-col gap-3 align-center">
                     <input type="hidden" name="form-name" value="feedback" />
                     <input name="name" type="text" placeholder="Name" required className="input" />

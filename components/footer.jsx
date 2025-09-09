@@ -6,6 +6,7 @@ import linkedInLogo from 'public/images/linkedInLogo.png';
 export function Footer() {
     return (
         <footer>
+            <div style={{ display: 'flex', gap: '20px' }}>
             <Link
                 href="https://github.com/netlify-templates/next-platform-starter"
                 target="_blank"
@@ -19,6 +20,7 @@ export function Footer() {
             >
                 <Image src={linkedInLogo} width={70} height={70} alt="LinkedIn Logo"></Image>
             </Link>
+            </div>
         </footer>
     );
 }
