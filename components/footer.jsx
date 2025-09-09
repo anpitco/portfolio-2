@@ -1,16 +1,22 @@
 import Link from 'next/link';
+import Image from 'next/image';
+import githubLogo from 'public/images/github-mark-white.svg';
+import linkedInLogo from 'public/images/linkedInLogo.png';
 
 export function Footer() {
     return (
         <footer className="pt-16 pb-12 sm:pt-24 sm:pb-16">
-            <p className="text-sm">
-                <Link
-                    href="https://docs.netlify.com/frameworks/next-js/overview/"
-                    className="decoration-dashed text-primary underline-offset-8"
-                >
-                    Next.js on Netlify
-                </Link>
-            </p>
+            <Link
+                href="https://github.com/netlify-templates/next-platform-starter"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hidden lg:inline-flex lg:ml-auto"
+            >
+                <Image src={githubLogo} alt="GitHub logo" className="w-7" />
+            </Link>
+            <Link href="https://www.linkedin.com/in/anna-pitcock/">
+                <Image src={linkedInLogo} alt="LinkedIn Logo"></Image>
+            </Link>
         </footer>
     );
 }
