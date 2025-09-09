@@ -29,7 +29,6 @@ export default function Page() {
     return (
         <div className="flex flex-col gap-12 sm:gap-16">
             <section>
-                <ContextAlert className="mb-6" />
                 <h1 className="mb-4">Anna Pitcock</h1>
                 <h3 className="mb-6 text-lg">Software Engineer</h3>
                 <p className="mb-6 test-lg">I build fast, secure, scalabe cloud solutions.</p>

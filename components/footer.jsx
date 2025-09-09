@@ -11,7 +11,7 @@ export function Footer() {
                 href="https://github.com/netlify-templates/next-platform-starter"
                 target="_blank"
                 rel="noopener noreferrer"
-                //className="hidden lg:inline-flex lg:ml-auto"
+                className="hidden lg:inline-flex lg:ml-auto"
             >
                 <Image src={githubLogo} width={70} height={70} alt="GitHub logo" />
             </Link>
