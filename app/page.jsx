@@ -31,16 +31,11 @@ export default function Page() {
                 <h1 className="mb-4">Anna Pitcock</h1>
                 <h3 className="mb-6 text-lg">Software Engineer</h3>
                 <p className="mb-6 test-lg">I build fast, secure, scalabe cloud solutions.</p>
-                <Link href="https://docs.netlify.com/frameworks/next-js/overview/" className="btn btn-lg sm:min-w-64">
-                    Read the Docs
-                </Link>
             </section>
-            {!!ctx && (
-                <section className="flex flex-col gap-4">
-                    <Markdown content={contextExplainer} />
-                    <RuntimeContextCard />
-                </section>
-            )}
+            <section>
+                <h2>Schooling</h2>
+                <p>I went to school at Colorado School of Mines and graduated with a Bachelor's degree in Computer Science. Go Orediggers!</p>
+            </section>
             <section className="flex flex-col gap-4">
                 <Markdown content={preDynamicContentExplainer} />
                 <RandomQuote />

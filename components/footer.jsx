@@ -14,7 +14,10 @@ export function Footer() {
             >
                 <Image src={githubLogo} alt="GitHub logo" className="w-7" />
             </Link>
-            <Link href="https://www.linkedin.com/in/anna-pitcock/">
+            <Link 
+                href="https://www.linkedin.com/in/anna-pitcock/"
+                className="hidden lg:inline-flex lg:ml-auto"
+            >
                 <Image src={linkedInLogo} alt="LinkedIn Logo"></Image>
             </Link>
         </footer>

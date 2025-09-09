@@ -4,7 +4,7 @@ import { Markdown } from 'components/markdown';
 import { SubmitButton } from 'components/submit-button';
 
 export const metadata = {
-    title: 'On-Demand Revalidation'
+    title: 'About Me'
 };
 
 const tagName = 'randomWiki';
@@ -38,7 +38,6 @@ For this functionality to work, Next.js uses the [fine-grained caching headers](
 `;
 
 export default async function Page() {
-    <p>Testing if this gets in there????</p>
     async function revalidateWiki() {
         'use server';
         revalidateTag(tagName);
@@ -47,6 +46,7 @@ export default async function Page() {
     return (
         <>
             <h1 className="mb-8">Revalidation Basics</h1>
+            <p>Testing if this gets in there????</p>
             <Markdown content={explainer} className="mb-6" />
             <form className="mb-8" action={revalidateWiki}>
                 <SubmitButton text="Click to Revalidate" />
