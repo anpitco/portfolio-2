@@ -38,6 +38,7 @@ For this functionality to work, Next.js uses the [fine-grained caching headers](
 `;
 
 export default async function Page() {
+    <p>Testing if this gets in there????</p>
     async function revalidateWiki() {
         'use server';
         revalidateTag(tagName);

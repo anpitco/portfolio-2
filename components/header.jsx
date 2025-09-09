@@ -1,14 +1,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import personalLogo from 'public/images/logo.png';
+import personalLogo from 'public/images/personalLogo.png';
 
 const navItems = [
     { linkText: 'Home', href: '/' },
-    { linkText: 'About Me', href: '/revalidation' },
+    { linkText: 'About Me', href: '/aboutMe' },
     { linkText: 'Experience', href: '/image-cdn' },
-    { linkText: 'Projects', href: '/edge' },
-    { linkText: 'Blobs', href: '/blobs' },
-    { linkText: 'Classics', href: '/classics' }
+    { linkText: 'Projects', href: '/edge' }
 ];
 
 export function Header() {
