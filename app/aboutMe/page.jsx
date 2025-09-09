@@ -45,13 +45,11 @@ export default async function Page() {
 
     return (
         <>
-            <h1 className="mb-8">Revalidation Basics</h1>
-            <p>Testing if this gets in there????</p>
-            <Markdown content={explainer} className="mb-6" />
-            <form className="mb-8" action={revalidateWiki}>
-                <SubmitButton text="Click to Revalidate" />
-            </form>
-            <RandomWikiArticle />
+            <h1 className="mb-8">Who is Anna Pitcock?</h1>
+            <section>
+                <h2>Schooling</h2>
+                <p>I went to school at Colorado School of Mines and graduated with a Bachelors degree in Computer Science. Go Orediggers!</p>
+            </section>
         </>
     );
 }

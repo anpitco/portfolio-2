@@ -16,7 +16,7 @@ export function Footer() {
             </Link>
             <Link 
                 href="https://www.linkedin.com/in/anna-pitcock/"
-                className="hidden lg:inline-flex lg:ml-auto"
+                className="pt-16 pb-12 sm:pt-24 sm:pb-16"
             >
                 <Image src={linkedInLogo} alt="LinkedIn Logo"></Image>
             </Link>

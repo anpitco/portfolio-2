@@ -32,10 +32,7 @@ export default function Page() {
                 <h3 className="mb-6 text-lg">Software Engineer</h3>
                 <p className="mb-6 test-lg">I build fast, secure, scalabe cloud solutions.</p>
             </section>
-            <section>
-                <h2>Schooling</h2>
-                <p>I went to school at Colorado School of Mines and graduated with a Bachelors degree in Computer Science. Go Orediggers!</p>
-            </section>
+            
             <section className="flex flex-col gap-4">
                 <Markdown content={preDynamicContentExplainer} />
                 <RandomQuote />
