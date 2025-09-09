@@ -24,6 +24,8 @@ And as always with dynamic content, beware of layout shifts & flicker! (here, we
 const ctx = getNetlifyContext();
 
 export default function Page() {
+    const today = new Date();
+
     return (
         <div className="flex flex-col gap-12 sm:gap-16">
             <section>
@@ -31,6 +33,7 @@ export default function Page() {
                 <h1 className="mb-4">Anna Pitcock</h1>
                 <h3 className="mb-6 text-lg">Software Engineer</h3>
                 <p className="mb-6 test-lg">I build fast, secure, scalabe cloud solutions.</p>
+                <p>Open for work starting: {today.toDateString()}</p>
             </section>
             
             <section className="flex flex-col gap-4">
