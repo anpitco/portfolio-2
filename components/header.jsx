@@ -7,7 +7,7 @@ const navItems = [
     { linkText: 'About Me', href: '/aboutMe' },
     { linkText: 'Experience', href: '/experience' },
     { linkText: 'Projects', href: '/projects' },
-    { linkTest: 'Feedback', href: '/feedback'}
+    { linkTest: 'Feedback', href: '/feedback' }
 ];
 
 export function Header() {

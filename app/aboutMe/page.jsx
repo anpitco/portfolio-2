@@ -6,11 +6,10 @@ import { SubmitButton } from 'components/submit-button';
 export const metadata = {
     title: 'Anna Pitcock'
 };
-
-const tagName = 'randomWiki';
-const randomWikiUrl = 'https://en.wikipedia.org/api/rest_v1/page/random/summary';
-const maxExtractLength = 200;
-const revalidateTTL = 60;
+// const tagName = 'randomWiki';
+// const randomWikiUrl = 'https://en.wikipedia.org/api/rest_v1/page/random/summary';
+// const maxExtractLength = 200;
+// const revalidateTTL = 60;
 
 const schooling = `
 I went to school at Colorado School of Mines and graduated with a Bachelors degree in Computer Science. Go Orediggers!
@@ -19,29 +18,11 @@ Throughout my time at Mines, I was able to explore three major areas of interest
 I obtained a bachelors degree, minor, area of special interest, and a certificate while there. 
 `;
 
-const explainer = `
-This page perfoms a \`fetch\` on the server to get a random article from Wikipedia. 
-The fetched data is then cached with a tag named "${tagName}" and a maximum age of ${revalidateTTL} seconds.
+const native = `
+I have was born and have lived in Colorado my whole life! 
+I've lived in various cities (Golden, Highlands Ranch, Lone Tree, Parker), but have never strayed from my roots!
 
-~~~jsx
-const url = 'https://en.wikipedia.org/api/rest_v1/page/random/summary';
-
-async function RandomArticleComponent() {
-    const randomArticle = await fetch(url, {
-        next: { revalidate: ${revalidateTTL}, tags: ['${tagName}'] }
-    });
-    // ...render
-}
-~~~
-
-After the set time has passed, the first request for this page would trigger its rebuild in the background. When the new page is ready, subsequent requests would return the new page - 
-see [\`stale-white-revalidate\`](https://www.netlify.com/blog/swr-and-fine-grained-cache-control/).
-
-Alternatively, if the cache tag is explicitly invalidated by \`revalidateTag('${tagName}')\`, any page using that tag would be rebuilt in the background when requested.
-
-In real-life applications, tags are typically invalidated when data has changed in an external system (e.g., the CMS notifies the site about content changes via a webhook), or after a data mutation made through the site.
-
-For this functionality to work, Next.js uses the [fine-grained caching headers](https://docs.netlify.com/platform/caching/) available on Netlify - but you can use these features on basically any Netlify site!
+My hobbies include hiking, camping, paddle boarding, reading and hammocking in a park, skiing in the winter, and I absolutely love leaf peeping in the fall. 
 `;
 
 export default async function Page() {
@@ -52,29 +33,31 @@ export default async function Page() {
                 <h2>Schooling</h2>
                 <Markdown content={schooling} className="mb-12" />
             </section>
+            <section>
+                <Markdown content={native} className="mb-12" />
+            </section>
         </>
     );
 }
+// async function RandomWikiArticle() {
+//     const randomWiki = await fetch(randomWikiUrl, {
+//         next: { revalidate: revalidateTTL, tags: [tagName] }
+//     });
 
-async function RandomWikiArticle() {
-    const randomWiki = await fetch(randomWikiUrl, {
-        next: { revalidate: revalidateTTL, tags: [tagName] }
-    });
+//     const content = await randomWiki.json();
+//     let extract = content.extract;
+//     if (extract.length > maxExtractLength) {
+//         extract = extract.slice(0, extract.slice(0, maxExtractLength).lastIndexOf(' ')) + ' [...]';
+//     }
 
-    const content = await randomWiki.json();
-    let extract = content.extract;
-    if (extract.length > maxExtractLength) {
-        extract = extract.slice(0, extract.slice(0, maxExtractLength).lastIndexOf(' ')) + ' [...]';
-    }
-
-    return (
-        <Card className="max-w-2xl">
-            <h3 className="text-2xl text-neutral-900">{content.title}</h3>
-            <div className="text-lg font-bold">{content.description}</div>
-            <p className="italic">{extract}</p>
-            <a target="_blank" rel="noopener noreferrer" href={content.content_urls.desktop.page}>
-                From Wikipedia
-            </a>
-        </Card>
-    );
-}
+//     return (
+//         <Card className="max-w-2xl">
+//             <h3 className="text-2xl text-neutral-900">{content.title}</h3>
+//             <div className="text-lg font-bold">{content.description}</div>
+//             <p className="italic">{extract}</p>
+//             <a target="_blank" rel="noopener noreferrer" href={content.content_urls.desktop.page}>
+//                 From Wikipedia
+//             </a>
+//         </Card>
+//     );
+// }
