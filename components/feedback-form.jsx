@@ -47,6 +47,17 @@ export function FeedbackForm() {
                     {status === 'error' && <Alert type="error">{error}</Alert>}
                 </form>
             </Card>
+            <Card title="Leave Feedback For Me">
+                <form name="feedback" action="https://formsubmit.co/anna.pitcock@gmail.com" method="POST" className="flex flex-col gap-3 align-center">
+                    <input type="hidden" name="form-name" value="feedback" />
+                    <input name="name" type="text" placeholder="Name" required className="input" />
+                    <input name="email" type="email" placeholder="Email (optional)" className="input" />
+                    <input name="message" type="text" placeholder="Message" required className="input" />
+                    <button className="btn" type="submit" disabled={status === 'pending'}>
+                        Submit
+                    </button>
+                </form>
+            </Card>
         </div>
     );
 }

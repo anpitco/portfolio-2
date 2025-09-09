@@ -12,7 +12,7 @@ export function Footer() {
                 rel="noopener noreferrer"
                 className="hidden lg:inline-flex lg:ml-auto"
             >
-                <Image src={githubLogo} alt="GitHub logo" />
+                <Image src={githubLogo} width={70} height={70} alt="GitHub logo" />
             </Link>
             <Link 
                 href="https://www.linkedin.com/in/anna-pitcock/"
