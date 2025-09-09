@@ -34,7 +34,7 @@ export default function Page() {
             </section>
             <section>
                 <h2>Schooling</h2>
-                <p>I went to school at Colorado School of Mines and graduated with a Bachelor's degree in Computer Science. Go Orediggers!</p>
+                <p>I went to school at Colorado School of Mines and graduated with a Bachelors degree in Computer Science. Go Orediggers!</p>
             </section>
             <section className="flex flex-col gap-4">
                 <Markdown content={preDynamicContentExplainer} />
