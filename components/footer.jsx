@@ -17,7 +17,7 @@ export function Footer() {
             <Link 
                 href="https://www.linkedin.com/in/anna-pitcock/"
             >
-                <Image src={linkedInLogo} width={100} height={100} alt="LinkedIn Logo"></Image>
+                <Image src={linkedInLogo} width={70} height={70} alt="LinkedIn Logo" className="w-7"></Image>
             </Link>
         </footer>
     );

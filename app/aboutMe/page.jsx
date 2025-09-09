@@ -4,13 +4,20 @@ import { Markdown } from 'components/markdown';
 import { SubmitButton } from 'components/submit-button';
 
 export const metadata = {
-    title: 'About Me'
+    title: 'Anna Pitcock'
 };
 
 const tagName = 'randomWiki';
 const randomWikiUrl = 'https://en.wikipedia.org/api/rest_v1/page/random/summary';
 const maxExtractLength = 200;
 const revalidateTTL = 60;
+
+const schooling = `
+I went to school at Colorado School of Mines and graduated with a Bachelors degree in Computer Science. Go Orediggers!
+
+Throughout my time at Mines, I was able to explore three major areas of interest: computer science, math, and enconoics. 
+I obtained a bachelors degree, minor, area of special interest, and a certificate while there. 
+`;
 
 const explainer = `
 This page perfoms a \`fetch\` on the server to get a random article from Wikipedia. 
@@ -38,17 +45,12 @@ For this functionality to work, Next.js uses the [fine-grained caching headers](
 `;
 
 export default async function Page() {
-    async function revalidateWiki() {
-        'use server';
-        revalidateTag(tagName);
-    }
-
     return (
         <>
             <h1 className="mb-8">Who is Anna Pitcock?</h1>
             <section>
                 <h2>Schooling</h2>
-                <p>I went to school at Colorado School of Mines and graduated with a Bachelors degree in Computer Science. Go Orediggers!</p>
+                <Markdown content={schooling} className="mb-12" />
             </section>
         </>
     );
