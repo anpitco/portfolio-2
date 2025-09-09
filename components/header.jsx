@@ -5,8 +5,8 @@ import personalLogo from 'public/images/personalLogo.png';
 const navItems = [
     { linkText: 'Home', href: '/' },
     { linkText: 'About Me', href: '/aboutMe' },
-    { linkText: 'Experience', href: '/image-cdn' },
-    { linkText: 'Projects', href: '/edge' }
+    { linkText: 'Experience', href: '/experience' },
+    { linkText: 'Projects', href: '/projects' }
 ];
 
 export function Header() {

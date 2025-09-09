@@ -5,7 +5,7 @@ import { Markdown } from 'components/markdown';
 import { getNetlifyContext } from 'utils';
 
 export const metadata = {
-    title: 'Image CDN'
+    title: 'Anna Pitcock'
 };
 
 const sampleImage = '/images/corgi.jpg';
