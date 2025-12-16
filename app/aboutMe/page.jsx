@@ -38,6 +38,7 @@ I have was born and have lived in Colorado my whole life!
 I've lived in various cities (Golden, Highlands Ranch, Lone Tree, Parker), but have never strayed from my roots!
 
 My hobbies include hiking, camping, paddle boarding, reading and hammocking in a park, skiing in the winter, and I absolutely love leaf peeping in the fall. 
+I also have an adorable mini Australian Shepherd named Enzo at home whom I love training, walking, and snuggling!
 `;
 
 export default async function Page() {
@@ -52,6 +53,7 @@ export default async function Page() {
                 <Markdown content={highschool} className="mb-12" />
             </section>
             <section>
+                <h3> Hobbies </h3>
                 <Markdown content={native} className="mb-12" />
             </section>
         </>
