@@ -39,6 +39,14 @@ subsequent dashboards in Grafana to track metrics.
 * Skilled in using Jira for Agile project management, including managing backlogs, sprints, and issue tracking.
 `;
 
+const internship = `
+* Constructed a capacity monitoring program utilizing Python to collect ZFSSA analytics data.
+* Used Agile methodology to create and complete stories in Jira for each sprint.
+* Demonstrated results to executive leadership using PowerPoint that was implemented into current operations.
+* Initialized replication metrics using gauges and pushed those metrics to Prometheus.
+* Used Grafana to create a dashboard of all data collected.
+`;
+
 const exampleCodeSnipet = `
 In the code below, a regular \`<img>\` tag is used in both cases for a framework-agnostic example. 
 Other than using \`next/image\` or rolling your own \`<img>\` tags, you can also use the excellent [unpic-img](https://unpic.pics/).
@@ -95,15 +103,17 @@ export default function Page() {
                 <h1>Experience</h1>
             </section>
             <section>
-                <h2 className="mb-6">Kinective</h2>
+                <h2 className="mb-12">Kinective</h2>
                 <h3>Associate DevOps Engineer</h3>
-                <h3>January 2026 - Present</h3>
+                <h4>January 2026 - Present</h4>
                 <Markdown content={kinectiveJob} className="mb-12" />
             </section>
             <section>
-                <h2 className="mb-6">Oracle</h2>
-                <h5> Software Engineer <pre>September 2023 - September 2025</pre></h5>
+                <h2 className="mb-12">Oracle</h2>
+                <h4> Software Engineer September 2023 - September 2025</h4>
                 <Markdown content={oracleJob} className="mb-12" />
+                <h4> Software Engineer Internship May 2022 - August 2022</h4>
+                <Markdown content={internship} className="mb-12" />
             </section>
         </div>
     );
