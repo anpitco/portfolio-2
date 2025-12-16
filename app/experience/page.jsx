@@ -8,7 +8,7 @@ export const metadata = {
     title: 'Anna Pitcock'
 };
 
-// const sampleImage = '/images/corgi.jpg';
+const sampleImage = '/images/corgi.jpg';
 
 const ctx = getNetlifyContext();
 const forceWebP = ctx === 'dev';
