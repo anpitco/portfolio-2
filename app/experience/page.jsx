@@ -100,7 +100,7 @@ export default function Page() {
                     }}
                     className="mb-6"
                 /> */}
-                <h1>Experience</h1>
+                <h1 className="mb-12">Experience</h1>
             </section>
             <section>
                 <h2 className="mb-12">Kinective</h2>
@@ -110,9 +110,11 @@ export default function Page() {
             </section>
             <section>
                 <h2 className="mb-12">Oracle</h2>
-                <h4> Software Engineer September 2023 - September 2025</h4>
+                <h3> Software Engineer </h3>
+                <h4>September 2023 - September 2025</h4>
                 <Markdown content={oracleJob} className="mb-12" />
-                <h4> Software Engineer Internship May 2022 - August 2022</h4>
+                <h3> Software Engineer Internship </h3>
+                <h4>May 2022 - August 2022</h4>
                 <Markdown content={internship} className="mb-12" />
             </section>
         </div>

@@ -11,14 +11,7 @@ The card below is rendered on the server based on the value of \`process.env.CON
 `;
 
 const preDynamicContentExplainer = `
-The card content below is fetched by the client-side from \`/quotes/random\` (see file \`app/quotes/random/route.js\`) with a different quote shown on each page load:
-`;
-
-const postDynamicContentExplainer = `
-On Netlify, Next.js Route Handlers are automatically deployed as [Serverless Functions](https://docs.netlify.com/functions/overview/).
-Alternatively, you can add Serverless Functions to any site regardless of framework, with acccess to the [full context data](https://docs.netlify.com/functions/api/).
-
-And as always with dynamic content, beware of layout shifts & flicker! (here, we aren't...)
+The card content below is shows a different quote on each page load!
 `;
 
 const ctx = getNetlifyContext();
@@ -38,7 +31,6 @@ export default function Page() {
             <section className="flex flex-col gap-4">
                 <Markdown content={preDynamicContentExplainer} />
                 <RandomQuote />
-                <Markdown content={postDynamicContentExplainer} />
             </section>
         </div>
     );

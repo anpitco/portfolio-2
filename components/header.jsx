@@ -6,7 +6,7 @@ const navItems = [
     { linkText: 'Home', href: '/' },
     { linkText: 'About Me', href: '/aboutMe' },
     { linkText: 'Experience', href: '/experience' },
-    { linkText: 'Projects', href: '/projects' },
+    // { linkText: 'Projects', href: '/projects' },
     { linkText: 'Feedback', href: '/feedback' }
 ];
 
