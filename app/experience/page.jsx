@@ -17,12 +17,6 @@ const sampleImageSrcSet = [640, 1280, 2048]
         return `/.netlify/images?url=${sampleImage}&w=${size}${forceWebP ? '&fm=webp' : ''} ${size}w`;
     })
     .join(', ');
-const AlignedTextComponent = () => {
-  const containerStyle = {
-    display: 'flex',
-    justifyContent: 'space-between', // Pushes items to the far ends of the container
-    width: '100%', // Ensures the container spans the full width available
-  };
 
 const kinectiveJob = `
 * Create and manage cloud infrastructure and software, OS configuration and deployment, databases and internal software development tools
@@ -90,7 +84,7 @@ detection, so format is set to WebP.
 
 export default function Page() {
     return (
-        <div style={containerStyle}>
+        <div >
             <section>
                 {/* <ContextAlert
                     addedChecksFunction={(ctx) => {
@@ -102,8 +96,8 @@ export default function Page() {
             </section>
             <section>
                 <h2 className="mb-6">Kinective</h2>
-                <span><h3>Associate DevOps Engineer</h3></span>
-                <span><h3>January 2026 - Present</h3></span>
+                <h3>Associate DevOps Engineer</h3>
+                <h3>January 2026 - Present</h3>
                 <Markdown content={kinectiveJob} className="mb-12" />
             </section>
             <section>
