@@ -67,26 +67,7 @@ In local development, optimization is performed locally without automatic format
 detection, so format is set to WebP.
 `;
 
-export default function Page() {
-    return (
-        <div className="flex flex-col gap-12 sm:gap-16">
-            <section>
-                {/* <ContextAlert
-                    addedChecksFunction={(ctx) => {
-                        return ctx === 'dev' ? devModeWarning : null;
-                    }}
-                    className="mb-6"
-                /> */}
-                <h1>Experience</h1>
-            </section>
-            <section>
-                <h2 className="mb-6">Kinective              Jan 2026 - Present</h2>
-                <Markdown content={kinectiveJob} className="mb-12" />
-            </section>
-            <section>
-                <h2 className="mb-6">Oracle                 September 2023 - September 2025</h2>
-                <Markdown content={oracleJob} className="mb-12" />
-                <figure
+                {/* <figure
                     className="relative grid w-full overflow-hidden border-2 border-white rounded-lg select-none diff aspect-3/2"
                     tabIndex="0"
                 >
@@ -105,7 +86,40 @@ export default function Page() {
                         </div>
                     </div>
                     <div className="relative h-2 col-start-1 row-start-1 overflow-hidden opacity-0 resize-x diff-resizer z-1 min-w-4 cursor-ew-resize top-1/2"></div>
-                </figure>
+                </figure> */}
+
+export default function Page() {
+    return (
+        <div className="flex flex-col gap-12 sm:gap-16">
+            <section>
+                {/* <ContextAlert
+                    addedChecksFunction={(ctx) => {
+                        return ctx === 'dev' ? devModeWarning : null;
+                    }}
+                    className="mb-6"
+                /> */}
+                <h1>Experience</h1>
+            </section>
+            <section>
+                <h2 className="mb-6">Kinective <pre><pre>Jan 2026 - Present</pre></pre></h2>
+                <Markdown content={kinectiveJob} className="mb-12" />
+            </section>
+            <section>
+                <h2 className="mb-6">Oracle September 2023 - September 2025</h2>
+                <ul>
+                    <li>Contributed to the development of two major services: the Marketplace Project and the Certificate-Based Resource Principal Service,
+both critical to OCI’s strategic initiatives.</li>
+                    <li>Designed and implemented numerous RESTful API endpoints to support scalable service operations.</li>
+                    <li>Utilized Java and Python for backend service development and Terraform for infrastructure as code, enabling reliable deployment and
+management of OCI resources.</li>
+                    <li>Developed and integrated detailed service metrics and alarms for enhanced observability and monitoring using Prometheus. Created
+subsequent dashboards in Grafana to track metrics.</li>
+                    <li>Authored internal documentation to support service adoption, maintenance, and onboarding using Confluence and runbooks.</li>
+                    <li>Provided on call support every 2 months on a rotational basis supporting production regions and users.</li>
+                    <li>Participated in deployment rotation to release latest code to development, integration, and production regions using Shepherd.</li>
+                    <li>Agile experience includes participating in daily stand-ups, sprint planning, and retrospectives.</li>
+                    <li>Skilled in using Jira for Agile project management, including managing backlogs, sprints, and issue tracking.</li>
+                </ul>
             </section>
         </div>
     );
