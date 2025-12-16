@@ -61,33 +61,10 @@ export default function Page() {
                     }}
                     className="mb-6"
                 />
-                <h1>Image CDN</h1>
+                <h1>Experience</h1>
             </section>
             <section>
-                <h2 className="mb-6">Using next/image component</h2>
-                <Markdown content={nextImageSnippet} className="mb-8" />
-                <figure>
-                    <div className="relative overflow-hidden border-2 border-white rounded-lg aspect-3/2">
-                        <Image
-                            src="/images/corgi.jpg"
-                            priority
-                            fill={true}
-                            style={{ objectFit: 'contain' }}
-                            sizes="(max-width: 1024px) 100vw, 1024px"
-                            alt="Corgi"
-                        />
-                    </div>
-                    <figcaption className="mt-2 text-sm italic">
-                        Credit: photo by{' '}
-                        <a href="https://unsplash.com/@alvannee?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
-                            Alvan Nee
-                        </a>{' '}
-                        on{' '}
-                        <a href="https://unsplash.com/photos/long-coated-white-and-brown-dog-lvFlpqEvuRM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
-                            Unsplash
-                        </a>
-                    </figcaption>
-                </figure>
+                <h2 className="mb-6">Kinective Jan 2026 - Present</h2>
             </section>
             <section>
                 <h2 className="mb-6">Original vs. optimized image: can you tell the difference?</h2>
