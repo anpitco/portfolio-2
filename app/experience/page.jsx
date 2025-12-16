@@ -8,7 +8,7 @@ export const metadata = {
     title: 'Anna Pitcock'
 };
 
-const sampleImage = '/images/corgi.jpg';
+// const sampleImage = '/images/corgi.jpg';
 
 const ctx = getNetlifyContext();
 const forceWebP = ctx === 'dev';
@@ -101,11 +101,13 @@ export default function Page() {
                 <h1>Experience</h1>
             </section>
             <section>
-                <h2 className="mb-6">Kinective <pre><pre>Jan 2026 - Present</pre></pre></h2>
+                <h2 className="mb-6">Kinective</h2>
+                <h4>Associate DevOps Engineer January 2026 - Present</h4>
                 <Markdown content={kinectiveJob} className="mb-12" />
             </section>
             <section>
-                <h2 className="mb-6">Oracle September 2023 - September 2025</h2>
+                <h2 className="mb-6">Oracle</h2>
+                <h5> Software Engineer <pre>September 2023 - September 2025</pre></h5>
                 <ul>
                     <li>Contributed to the development of two major services: the Marketplace Project and the Certificate-Based Resource Principal Service,
 both critical to OCI’s strategic initiatives.</li>
